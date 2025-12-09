@@ -1,295 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Eman Beauty Hub</title>
-    <style>
-        body {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #121212;
-            color: #f4f4f4;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr Eman Beauty Hub</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color: #222222;
+    }
 
-        header {
-            background-color: #006400;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
+    header {
+      background: linear-gradient(90deg, #fff7cc, #ffe066);
+      color: #222;
+      padding: 25px;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 0 0 15px rgba(255, 230, 0, 0.8);
+      box-shadow: 0 0 25px rgba(255, 221, 0, 0.8);
+    }
 
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #1a1a1a;
-            border-bottom: 2px solid #00cc66;
-            padding: 10px 0;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fffbea;
+      border-bottom: 2px solid #ffd700;
+      padding: 10px 0;
+      box-shadow: 0 0 10px rgba(255, 230, 0, 0.4);
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
+    nav a {
+      color: #222;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
 
-        nav a:hover {
-            background-color: #00cc66;
-        }
+    nav a:hover {
+      background-color: #ffeb3b;
+      color: #000;
+      box-shadow: 0 0 10px rgba(255, 235, 59, 0.9);
+    }
 
-        .hero {
-            background: url('https://cdn.discordapp.com/attachments/1317467127757799495/1317499349202370612/Screenshot_2024-12-14_061827.png?ex=676ac5e2&is=67697462&hm=8f9d55a75ff64b444ac773acae133457fdc2bb074378d8da98367a1c11eb6d58&') no-repeat center center/cover;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-        }
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-        }
+    .hero {
+      background: url('https://i.ibb.co/PvrsTdDJ/516704026-1252545779858065-3936317281630781220-n.png') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 10px rgba(255, 255, 255, 0.8);
+    }
 
-        .services {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px 20px;
-            background-color: #181818;
-        }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #fff9c4, #ffe57f);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .service {
-            flex: 1 1 300px;
-            margin: 15px;
-            padding: 25px;
-            border: 1px solid #00cc66;
-            border-radius: 10px;
-            background-color: #1f1f1f;
-            box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);
-            text-align: center;
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 50px 20px;
+      background-color: #fffdf4;
+    }
 
-        .service:hover {
-            transform: scale(1.05);
-        }
+    .service {
+      flex: 1 1 300px;
+      margin: 15px;
+      padding: 25px;
+      border: 1px solid #ffea00;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 0 20px rgba(255, 221, 0, 0.5);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
 
-        .service h3 {
-            margin-bottom: 15px;
-            color: #00cc66;
-            font-size: 1.5rem;
-        }
+    .service:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(255, 235, 59, 0.9);
+    }
 
-        .service p {
-            color: #d9d9d9;
-            font-size: 1rem;
-        }
+    .service h3 {
+      margin-bottom: 15px;
+      color: #ffd700;
+      font-size: 1.5rem;
+      text-shadow: 0 0 10px rgba(255, 235, 59, 0.8);
+    }
 
-        footer {
-            background-color: #1a1a1a;
-            color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-            margin-top: 20px;
-            border-top: 2px solid #00cc66;
-            font-size: 0.9rem;
-        }
+    .service p {
+      color: #555;
+      font-size: 1rem;
+    }
 
-        footer a {
-            color: #00cc66;
-            text-decoration: underline;
-        }
+    footer {
+      background-color: #fffbea;
+      color: #444;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-top: 2px solid #ffd700;
+      font-size: 0.9rem;
+      box-shadow: 0 0 15px rgba(255, 230, 0, 0.5);
+    }
 
-        footer a:hover {
-            text-decoration: none;
-        }
+    footer a {
+      color: #ffb300;
+      text-decoration: underline;
+      font-weight: bold;
+    }
 
-        /* Modal Styles */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0,0,0,0.4);
-            padding-top: 60px;
-        }
+    footer a:hover {
+      text-decoration: none;
+      color: #ff8f00;
+    }
 
-        .modal-content {
-            background-color: #121212;
-            margin: 5% auto;
-            padding: 20px;
-            border: 1px solid #00cc66;
-            width: 80%;
-            max-width: 700px;
-            border-radius: 10px;
-            text-align: center;
-        }
+    /* Modal Styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(255, 255, 204, 0.8);
+      padding-top: 60px;
+    }
 
-        .close {
-            color: #fff;
-            font-size: 28px;
-            font-weight: bold;
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            padding: 10px;
-            cursor: pointer;
-        }
+    .modal-content {
+      background-color: #fffef7;
+      margin: 5% auto;
+      padding: 20px;
+      border: 2px solid #ffd700;
+      width: 80%;
+      max-width: 700px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(255, 221, 0, 0.6);
+    }
 
-        .close:hover,
-        .close:focus {
-            color: #00cc66;
-        }
-    </style>
+    .close {
+      color: #222;
+      font-size: 28px;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      padding: 10px;
+      cursor: pointer;
+      text-shadow: 0 0 10px rgba(255, 221, 0, 0.8);
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #ffcc00;
+    }
+
+    /* Reels Section */
+    #reels {
+      background-color: #fffef5;
+      padding: 50px 20px;
+      text-align: center;
+      border-top: 2px solid #ffd700;
+      box-shadow: inset 0 0 20px rgba(255, 235, 59, 0.4);
+    }
+
+    #reels h2 {
+      color: #ffca28;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-shadow: 0 0 15px rgba(255, 235, 59, 0.9);
+    }
+
+    .reels-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .reel {
+      background-color: #ffffff;
+      border: 1px solid #ffeb3b;
+      border-radius: 10px;
+      padding: 10px;
+      width: 300px;
+      box-shadow: 0 0 20px rgba(255, 235, 59, 0.7);
+      transition: 0.3s;
+    }
+
+    .reel:hover {
+      box-shadow: 0 0 35px rgba(255, 230, 0, 0.9);
+      transform: scale(1.05);
+    }
+
+    .reel video {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(255, 221, 0, 0.6);
+    }
+
+    .reel p {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #444;
+      text-shadow: 0 0 8px rgba(255, 221, 0, 0.5);
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        Dr Eman Beauty Hub
-    </header>
+  <header>Dr Eman Beauty Hub</header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-<a href="#" id="clientReviewsLink">Client Reviews</a>
-    </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#" id="clientReviewsLink">Client Reviews</a>
+  </nav>
 
-    <div class="hero">
-        <h1></h1>
+  <div class="hero">
+    <h1></h1>
+  </div>
+
+  <section id="services" class="services">
+    <div class="service" onclick="showModal('laserModal')">
+      <h3>إزالة الشعر بالليزر</h3>
+      <p>...</p>
+      <img src="https://i.ibb.co/fYnJdLxb/480647398-1152133129899331-6552204124277268662-n.jpg" alt="Laser Hair Removal" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
     </div>
 
-    <section id="services" class="services">
-        <div class="service" onclick="showModal('laserModal')">
-            <h3>إزالة الشعر بالليزر</h3>
-            <p></p>أنوثتك تكمل بجسم ناعم ..... لكن ده محتاج دايما ( وقت / مجهود /  فلوس ) 😭
-            استنى ✋️ ..........
-            ( وقت و مجهود و فلوس ) ده كان مع الطريق التقليدية البايخه 😉
-            لكن مع جلسات الليزر لازاله الشعر 
-            هتوفرى فلوسك بأقوى عروض شهر  نوفمبر و كمان هتوفرى وقتك و جهدك للأهم 😉✨
-            و لما تسألى عن سعر النبضه هتتفاجئ 💥🔥
-             #beautyhub_dr_emankhalil
-            --------------------------------------
-            للحجز والاستفسار : 
-            01009983354
-            01113422282
-            📍المنصورة , المشايه السفليه بجوار نادي الحوار , برج رجاء الرحمن ٢ بعد مطعم ستريو - الدور التاني</p>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317503542612987974/Laser_Hair_Remover.jpg?ex=676ac9ca&is=6769784a&hm=697910a45504fdb941e472304ea6dc95aba3929a65f2b1878408c92a6037c35e&" alt="Laser Hair Removal" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-        </div>
-        <div class="service" onclick="showModal('skinBoosterModal')">
-            <h3>Skin Booster</h3>
-            <p></p>Neofound Exo (( Skin Booster )) ✨ أقوى جلسات ابر النضاره
-            جلد مشدود و بشره أكثر شباب
-            تقلل التجاعيد و نضاره فوريه بعد الجلسه👌🏻⭐
-            
-            لكن نرجع و نقول .... كل بشره ليها مشاكلها و ليها علاجها المناسب
-            انتى عرفتى ايه النوع اللى يناسبك ولا لسه ؟! 😉
-            
-            #beautyhub_dr_emankhalil
-            --------------------------------------
-            للحجز والاستفسار :
-            01009983354
-            01113422282
-            📍المنصورة , المشايه السفليه بجوار نادي الحوار , برج رجاء الرحمن ٢ بعد مطعم ستريو - الدور التاني</p>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317506722088353872/Skin_Booster_Prices.jpg?ex=676accc0&is=67697b40&hm=69581205e850f92ab1d3140b7dabde6c0de87f7f730ea13eb7bfc0f9ca12d9be&" alt="Skin Booster" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-        </div>
-        <div class="service">
-            <h3>علاج البشرة</h3>
-            <p>جدد بشرتك مع العناية الخبرة، بما في ذلك العلاجات الجلدية، التقشير والمزيد.</p>
-        </div>
-        <div class="service">
-            <h3>حقن العنبر</h3>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317500538346143835/470159642_1103892908056687_6869805463352929908_n.jpg?ex=676ac6fe&is=6769757e&hm=3fe83bf62e0b1ac74067a57dc89344687a92a76629344b14ec7204211dbb43d3&" alt="Amber Injection" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
-            <p></p>حل سريع وآمن لتفتيح بشرتك، و كمان آيه للمناطق الحساسه  (( حقنة العنبر هي الإجابة و حل الفزوره )) 😍💫
-            حقنة العنبر تعتبر ثورة في عالم التجميل لأنها بتجمع بين:  
-            - تفتيح فوري للبشرة وتوحيد لونها.  
-            - تحسين ملمس الجلد وزيادة نضارته.  
-            - علاج التصبغات العنيدة في الوجه والمناطق الحساسة.  
-            طبعا بالإضافة لفوائدها في ترطيب البشرة بعمق وتحفيز الكولاجين لإطلالة شبابية مشرقة✨✨
-            جلسة واحدة كافية تشوفى الفرق 😉
-            #beautyhub_dr_emankhalil
-            --------------------------------------
-            للحجز والاستفسار : 
-            01009983354
-            01113422282
-            📍المنصورة , المشايه السفليه بجوار نادي الحوار , برج رجاء الرحمن ٢ بعد مطعم ستريو - الدور التاني</p>
-        </div>
-    </section>
-    <div id="clientReviewsModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h3>Client Reviews</h3>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317514858324951060/Client_Reviews_1.jpg?ex=676a2b94&is=6768da14&hm=695e99c4d0d82805dabde5fe475239c4c283561e5875150c72ee078077beaf9b&" alt="Client Reviews" style="width: 100%; border-radius: 8px;">
-        </div>
+    <div class="service" onclick="showModal('skinBoosterModal')">
+      <h3>Skin Booster</h3>
+      <p>...</p>
+      <img src="https://i.ibb.co/bR2zKvHw/Skin.jpg" alt="Skin Booster" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
     </div>
 
-    <script>
-        // Function to open the modal
-        function showModal(modalId) {
-            var modal = document.getElementById(modalId);
-            modal.style.display = "block";
-        }
-
-        // Function to close the modal
-        function closeModal() {
-            var modals = document.querySelectorAll('.modal');
-            modals.forEach(modal => modal.style.display = "none");
-        }
-
-        // Event listener for client reviews link
-        document.getElementById('clientReviewsLink').addEventListener('click', function() {
-            document.getElementById('clientReviewsModal').style.display = 'block';
-        });
-    </script>
-    <!-- Modal for Skin Booster -->
-    <div id="skinBoosterModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317506735862448198/Skin_Booster.jpg?ex=676accc3&is=67697b43&hm=50d6c315e8d7a521aaabbe10501a708c666b54ad1f9eadf561bdc0d38429f190&" alt="Skin Booster" style="width: 100%; border-radius: 8px;">
-            <h3>Skin Booster Treatment</h3>
-            <p>تعرفي على أحدث علاج لشد البشرة ومنحها الحيوية والنضارة بشكل سريع وآمن.</p>
-            <p><strong>للحجز والاستفسار:</strong></p>
-            <p>01009983354</p>
-            <p>01113422282</p>
-        </div>
+    <div class="service">
+      <h3>علاج البشرة</h3>
+      <img src="https://i.ibb.co/cK4qQ4KD/482347791-1164776755301635-5566487713818489475-n.jpg" alt="Amber Injection" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <p>...</p>
     </div>
 
-    <!-- Modal for Laser Hair Removal -->
-    <div id="laserModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img src="https://cdn.discordapp.com/attachments/1317467127757799495/1317504479972823120/Laser_Hair_Remove_Prices.jpg?ex=676acaaa&is=6769792a&hm=ea34ca064f4f711eac4023411f46674824b9568ea657954248f3dc68c744b659&" alt="Laser Hair Removal Prices" style="width: 100%; border-radius: 8px;">
-        </div>
+    <div class="service">
+      <h3>حقن العنبر</h3>
+      <img src="https://i.ibb.co/gXhQZtG/481248017-1152131086566202-6782752352184446738-n.jpg" alt="Amber Injection" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+      <p>...</p>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2024 Dr Eman Beauty Hub. All rights reserved.</p>
-    </footer>
+  <!-- 🔥 NEW REELS SECTION -->
+  <section id="reels">
+    <h2>Latest Reels 🎥</h2>
+    <div class="reels-container">
+      <div class="reel">
+        <video controls>
+          <source src="C:\Users\Adham Ehab\Desktop\Dreman Bueyty\Buttox.mp4">
+        </video>
+        <p>💚 جلسة نضارة البشرة الفورية – شوفي الفرق بنفسك!</p>
+      </div>
+      <div class="reel">
+        <video controls>
+          <source src="C:\Users\Adham Ehab\Desktop\Dreman Bueyty\fraction.mp4">
+        </video>
+        <p>✨ إزالة الشعر بالليزر – النتائج مبهرة!</p>
+      </div>
+      <div class="reel">
+        <video controls>
+          <source src="C:\Users\Adham Ehab\Desktop\Dreman Bueyty\Vill.mp4">
+        </video>
+        <p>💉 حقن العنبر – إشراقة فورية لبشرتك!</p>
+      </div>
+      <div class="reel">
+        <video controls>
+          <source src="C:\Users\Adham Ehab\Desktop\Dreman Bueyty\Skin.mp4">
+        </video>
+        <p>🌸 عناية شاملة بجمالك من Beauty Hub!</p>
+      </div>
+      <div class="reel">
+        <video controls>
+          <source src="C:\Users\Adham Ehab\Desktop\Dreman Bueyty\lazer advice.mp4">
+        </video>
+        <p>🌿 جلسة عناية بالبشرة – نتائج فورية وملحوظة!</p>
+      </div>
+    </div>
+  </section>
 
-    <script>
-        // Function to open modal
-        function showModal(modalId) {
-            document.getElementById(modalId).style.display = "block";
-        }
+  <div id="clientReviewsModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>Client Reviews</h3>
+      <img src="https://i.ibb.co/gKzVcVH/480555946-1153045543141423-3839120042578686572-n.jpg" alt="Client Reviews" style="width: 100%; border-radius: 8px;">
+    </div>
+  </div>
 
-        // Function to close modal
-        function closeModal() {
-            document.querySelectorAll(".modal").forEach(modal => modal.style.display = "none");
-        }
-    </script>
-    
+  <script>
+    function showModal(modalId) {
+      var modal = document.getElementById(modalId);
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      var modals = document.querySelectorAll('.modal');
+      modals.forEach(modal => modal.style.display = "none");
+    }
+
+    document.getElementById('clientReviewsLink').addEventListener('click', function() {
+      document.getElementById('clientReviewsModal').style.display = 'block';
+    });
+  </script>
+
+  <footer>
+    <p>&copy; 2024 Dr Eman Beauty Hub. All rights reserved.</p>
+  </footer>
 </body>
 </html>
